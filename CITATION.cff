@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software suite in your academic research, please cite it as below."
+authors:
+  - family-names: "Khalouzadeh"
+    given-names: "Amirhassan"
+    affiliation: "Department of Biomechanical Engineering"
+title: "Biomech Scholar Suite: The Complete Bilingual Research, Laboratory, and Presentation Operating System for Biomechanics"
+version: 1.0.0
+doi: 10.5281/zenodo.1234567
+date-released: 2026-11-04
+url: "https://github.com/amirhacn/biomech-scholar-suite"
+keywords:
+  - biomechanics
+  - gait-analysis
+  - motion-capture
+  - electromyography
+  - inverse-dynamics
+  - academic-writing
+  - peer-review
+  - presentation-rtl
+license: MIT

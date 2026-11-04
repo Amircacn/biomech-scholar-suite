@@ -1,0 +1,38 @@
+name: Verify & Lint Biomech Suite
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Test Scientific Plot Generation
+      run: |
+        python modules/02_scientific_figures_tables/scripts/plot_gait_cycle.py --out "test_gait.png"
+        python modules/02_scientific_figures_tables/scripts/plot_emg_processing.py --out "test_emg.png"
+        python modules/02_scientific_figures_tables/scripts/plot_stress_strain.py --out "test_stress.png"
+        test -f "test_gait.png"
+        test -f "test_emg.png"
+        test -f "test_stress.png"
+
+    - name: Lint Persian Markdown Documents
+      run: |
+        python scripts/fa_academic_linter.py README_FA.md
+        python scripts/fa_academic_linter.py modules/01_biomech_lab_engine/templates/lab_report_template_fa.md
+        python scripts/fa_academic_linter.py modules/04_bilingual_paper_writer_editor/examples/abstract_revised_fa.md

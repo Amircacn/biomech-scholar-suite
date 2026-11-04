@@ -1,0 +1,120 @@
+{
+  "deck_metadata": {
+    "title": "Biomechanical Efficacy of Active Knee Exoskeletons during Human Locomotion",
+    "title_fa": "اثربخشی بیومکانیکی اسکلت‌های بیرونی فعال زانو در بهبود الگوی راه رفتن",
+    "authors": ["Amirhassan Khalouzadeh", "Supervisor Name"],
+    "conference": "Annual International Conference on Biomedical Engineering (ICBME)",
+    "duration_minutes": 10,
+    "total_slides": 10,
+    "aspect_ratio": "16:9",
+    "design_palette": {
+      "primary": "#0072B2",
+      "accent": "#E69F00",
+      "text": "#222222",
+      "background": "#FFFFFF"
+    }
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "type": "title",
+      "title_en": "Biomechanical Efficacy of Active Knee Exoskeletons in Reducing Metabolic Cost",
+      "title_fa": "اثربخشی بیومکانیکی اسکلت بیرونی فعال زانو در کاهش هزینه متابولیک راه رفتن",
+      "speaker": "Amirhassan Khalouzadeh (Department of Biomechanical Engineering)",
+      "time_seconds": 30
+    },
+    {
+      "slide_number": 2,
+      "type": "problem_motivation",
+      "title_en": "Pathological Gait & Energy Expenditure Challenges",
+      "title_fa": "چالش‌های هزینه انرژی و افت پایداری در گیت پاتولوژیک",
+      "key_points": [
+        "افراد دچار ضعف عضلانی تا ۴۰٪ هزینه متابولیک بالاتری در راه رفتن صرف می‌کنند.",
+        "ارتزهای غیرفعال سنتی امکان تطبیق گشتاور با فازهای گام‌برداری را ندارند."
+      ],
+      "visual": "diagram_gait_impairment.png",
+      "time_seconds": 60
+    },
+    {
+      "slide_number": 3,
+      "type": "research_gap",
+      "title_en": "Research Gap: Torque Timing in Active Assistive Devices",
+      "title_fa": "شکاف پژوهش: زمان‌بندی دقیق اعمال گشتاور کمکی",
+      "key_points": [
+        "اعمال دیرهنگام گشتاور موجب تداخل با انقباض درون‌گرای عضلات چهارسر می‌شود.",
+        "نیاز به سیستم پیش‌بین مبتنی بر حسگرهای زاویه و فوت‌سوئیچ."
+      ],
+      "time_seconds": 60
+    },
+    {
+      "slide_number": 4,
+      "type": "hypothesis_objective",
+      "title_en": "Objective: Adaptive Quasi-Stiffness Knee Exoskeleton",
+      "title_fa": "هدف و فرضیه: اسکلت بیرونی با شبه‌سفتی انطباقی",
+      "hypothesis": "کنترل شبه‌سفتی متغیر در فاز استقرار بیشینه گشتاور مفصلی را تا ۱۵٪ کاهش می‌دهد.",
+      "time_seconds": 30
+    },
+    {
+      "slide_number": 5,
+      "type": "experimental_methods",
+      "title_en": "Experimental Protocol: Motion Capture & Force Plates",
+      "title_fa": "روش‌شناسی آزمایشگاهی: موکپ ۱۰ دوربینه و صفحات نیرو",
+      "details": {
+        "participants": "12 healthy adults (mass: 72±6 kg, height: 176±5 cm)",
+        "systems": "Vicon (100 Hz), Kistler Force Plates (1000 Hz), Delsys sEMG (2000 Hz)",
+        "conditions": "Unassisted Walking vs. Exoskeleton Transparent vs. Active Assistance"
+      },
+      "time_seconds": 90
+    },
+    {
+      "slide_number": 6,
+      "type": "processing_pipeline",
+      "title_en": "Inverse Dynamics & EMG Conditioning Pipeline",
+      "title_fa": "خط لوله پردازش سیگنال و دینامیک معکوس",
+      "pipeline_steps": [
+        "فیلتر پایین‌گذر باترورث ۶ هرتز برای مسیر سه‌بعدی مارکرها",
+        "محاسبه دینامیک معکوس پایین به بالا (Bottom-Up)",
+        "استخراج پوش خطی sEMG و نرمال‌سازی با MVC"
+      ],
+      "time_seconds": 60
+    },
+    {
+      "slide_number": 7,
+      "type": "results_kinematics",
+      "title_en": "Kinematics: Preservation of Natural Knee Flexion",
+      "title_fa": "یافته‌های سینماتیک: حفظ الگوی طبیعی زوایای مفصلی",
+      "result_highlight": "دامنه حرکتی زانو در فاز نوسان در سطح ۶۱٫۸ درجه بدون افت باقی ماند.",
+      "visual": "knee_kinematics_curve.pdf",
+      "time_seconds": 90
+    },
+    {
+      "slide_number": 8,
+      "type": "results_kinetics",
+      "title_en": "Kinetics: 18.4% Reduction in Biological Knee Moment",
+      "title_fa": "یافته‌های سینتیک: ۱۸٫۴٪ کاهش در بیشینه گشتاور بیولوژیکی زانو",
+      "result_highlight": "کاهش اوج گشتاور اکستنشن از ۱٫۳۲ به ۱٫۰۸ نیوتن‌متر بر کیلوگرم (p = 0.003).",
+      "visual": "knee_moment_reduction.pdf",
+      "time_seconds": 90
+    },
+    {
+      "slide_number": 9,
+      "type": "neuromuscular_discussion",
+      "title_en": "Neuromuscular Mechanism: Rectus Femoris Unloading",
+      "title_fa": "سازوکار عصبی-عضلانی: کاهش فعالیت عضله راست رانی",
+      "discussion_point": "افت ۲۲ درصدی دامنه RMS عضله چهارسر ران حاکی از انتقال موفق بار مکانیکی به محرک فعال است.",
+      "time_seconds": 60
+    },
+    {
+      "slide_number": 10,
+      "type": "conclusion_future",
+      "title_en": "Conclusion & Next Steps in Closed-Loop Adaptation",
+      "title_fa": "جمع‌بندی، محدودیت‌ها و چشم‌انداز آینده",
+      "takeaways": [
+        "کنترل شبه‌سفتی متغیر بار تحمیلی بر زانو را بدون اخلال در سینماتیک کاهش داد.",
+        "محدودیت اصلی: آزمون روی افراد سالم در سرعت ثابت بود.",
+        "گام بعدی: پیاده‌سازی کنترل مبتنی بر مدل بیومکانیکی زمان واقعی (Real-Time Neuromusculoskeletal Control)."
+      ],
+      "time_seconds": 60
+    }
+  ]
+}

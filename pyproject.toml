@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biomech-scholar-suite"
+version = "1.0.0"
+description = "The Complete Bilingual Research, Laboratory, and Presentation Operating System for Biomechanics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Amirhassan Khalouzadeh", email = "amirhassankhalouzadeh@gmail.com" }
+]
+keywords = [
+    "biomechanics",
+    "gait-analysis",
+    "motion-capture",
+    "electromyography",
+    "inverse-dynamics",
+    "persian-academic-writing",
+    "peer-review",
+    "scientific-plotting",
+    "powerpoint-rtl"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.7.0",
+    "python-docx>=1.0.0",
+    "python-pptx>=0.6.21",
+    "lxml>=4.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "flake8>=6.0.0",
+    "black>=23.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/amirhacn/biomech-scholar-suite"
+Documentation = "https://github.com/amirhacn/biomech-scholar-suite#readme"
+Repository = "https://github.com/amirhacn/biomech-scholar-suite.git"
+"Bug Tracker" = "https://github.com/amirhacn/biomech-scholar-suite/issues"
